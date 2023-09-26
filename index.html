@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Spotifyweb</title>
@@ -21,8 +20,8 @@
             <nav id="side-bar" class="d-flex">
                 <div class="container debug">
                     <h1 class="debug">
-                        <a href="#"><img src="img/logo.svg" alt=""></a>
-                        <a href="#"><img src="img/logo-small.svg" alt="" id="logo-small"></a>
+                        <a href="#"><img src="img/logo.svg" alt="" class="display-none"></a>
+                        <a href="#"><img src="img/logo-small.svg" alt="" id="logo-small" class="display-block"></a>
                     </h1>
                     <div class="short-list debug text-grey">
                         <ul class="debug d-flex column f-start debug">
@@ -31,7 +30,7 @@
                                     <div class="icon debug">
                                         <img src="img/home.svg" alt="">
                                     </div>
-                                    <div class="side-text debug d-flex align-center">
+                                    <div class="side-text debug d-flex align-center display-none">
                                         Home
                                     </div>
                                 </a>
@@ -41,7 +40,7 @@
                                     <div class="icon debug">
                                         <img src="img/search.svg" alt="">
                                     </div>
-                                    <div class="side-text debug d-flex align-center">
+                                    <div class="side-text debug d-flex align-center display-none">
                                         Cerca
                                     </div>
                                 </a>
@@ -51,15 +50,15 @@
                                     <div class="icon debug">
                                         <img src="img/libreria.svg" alt="">
                                     </div>
-                                    <div class="side-text debug d-flex align-center">
+                                    <div class="side-text debug d-flex align-center display-none">
                                         La tua libreria
                                     </div>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <h3 class="debug">PLAYLIST</h3>
-                    <div class="short-list debug text-grey">
+                    <h3 class="debug display-none">PLAYLIST</h3>
+                    <div class="short-list debug text-grey display-none">
                         <ul class="debug d-flex column f-start debug">
                             <li class="d-flex debug align-center">
                                 <a href="#" class="text-grey d-flex">
@@ -68,7 +67,7 @@
                                             <i class="fa-solid fa-plus text-dark"></i>
                                         </div>
                                     </div>
-                                    <div class="side-text debug d-flex align-center">
+                                    <div class="side-text debug d-flex align-center display-none">
                                         Crea Playlist
                                     </div>
                                 </a>
@@ -132,7 +131,7 @@
                                 <div class="download debug">
                                     <img src="img/download.svg" alt="">
                                 </div>
-                                <div class="download-text debug">Installa app</div>
+                                <div class="download-text debug display-none">Installa app</div>
                             </div>
                         </a>
                     </div>
@@ -142,7 +141,7 @@
                                 <div class="profile debug">
                                     <img src="img/profile.svg" alt="">
                                 </div>
-                                <div class="profile-text debug text-white">John Doe</div>
+                                <div class="profile-text debug text-white display-none">John Doe</div>
                             </div>
                         </a>
                     </div>
@@ -221,24 +220,6 @@
                                     <div class="card-subtitle debug text-center text-grey">Subtitle</div>
                                 </a>
                             </div>
-                            <div class="card debug">
-                                <a href="">
-                                    <div class="card-img debug pd-y"><img src="img/metal_lifting.jpg" alt="metal"></div>
-                                    <div class="card-text debug pd-y text-center">
-                                        <h4>Heavy Metal</h4>
-                                    </div>
-                                    <div class="card-subtitle debug text-center text-grey">Subtitle</div>
-                                </a>
-                            </div>
-                            <div class="card debug">
-                                <a href="">
-                                    <div class="card-img debug pd-y"><img src="img/metal_lifting.jpg" alt="metal"></div>
-                                    <div class="card-text debug pd-y text-center">
-                                        <h4>Heavy Metal</h4>
-                                    </div>
-                                    <div class="card-subtitle debug text-center text-grey">Subtitle</div>
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -268,7 +249,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="for-me" class="debug">
+                <section id="popolari" class="debug">
                     <h2 class="debug">Artisti più popolari</h2>
                     <div class="card-subtitle text-grey">Più ascolti, più accurati saranno i suggerimenti</div>
                     <div class="album debug">

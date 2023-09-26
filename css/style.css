@@ -15,6 +15,7 @@
 body{
     background-color: var(--color-dark-color);
     font-family: sans-serif;
+    font-size: 0.8em;
 }
 img{
     width: 100%;
@@ -75,7 +76,7 @@ ul{
     list-style: none;
 }
 ul>li{
-    padding: 10px;
+    padding: 10px 10px 0 0;
     font-weight: 600;
 }
 li>a{
@@ -122,7 +123,7 @@ main{
     height: calc(100%);
     background-color: var(--color-dark-color);
     overflow-y: scroll;
-    padding: 90px 10px 0 20px;
+    padding: 80px 10px 0 20px;
     color: var(--color-white);
 }
 #call-to-action{
@@ -135,12 +136,12 @@ main{
 }
 /* PADDING / MARGIN */
 .pd-y{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 /* CALL TO ACTION */
 .btn{
-    margin-right: 1.5vw;
+    margin-right: 30px;
     font-size: 0.7em;
     border: 1px solid white;
     border-radius: 50px;
@@ -154,8 +155,9 @@ main{
 }
 /* MAIN */
 .card{
-    max-width: 200px;
-    padding: 20px 20px 20px 0;
+    max-width: 150px;
+    min-width: 100px;
+    padding: 0 20px 10px 0;
 }
 .card-subtitle{
     font-size: 0.8em;
@@ -224,4 +226,15 @@ main{
     z-index: 1000;
     bottom: 0;
     left: 0;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 576px) {
+    .diplay-none{
+        display: none;
+    }
+    .display-block{
+        display: block;
+    }
 }
