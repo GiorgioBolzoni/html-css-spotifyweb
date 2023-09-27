@@ -59,9 +59,9 @@ img{
     align-items: center;
 }
 /* UTILITY */
-.debug{
+/* .debug{
     border: 1px solid red;
-}
+} */
 
 /* TEXT */
 .text-center{
@@ -176,6 +176,7 @@ main{
 .card-subtitle{
     font-size: 0.8em;
     font-weight: 600;
+    padding-bottom: 10px;
 }
 .circle{
     border-radius: 50%;
@@ -311,7 +312,8 @@ main{
 } */
 .icon-playbar-dx-box{
     width: 50%;
-    font-size: 1.2em
+    font-size: 1.2em;
+    margin-right: 10px;
 }
 .soundwave-container {
     height: 100%;
@@ -390,6 +392,13 @@ a{
     color: rgb(171, 171, 98);
     font-weight: 600;
     cursor: pointer;
+}
+li > a:hover{
+    color: white;
+}
+.btn:hover{
+    background-color: var(--color-dark-color);
+    font-size: 0.8em;
 }
 
 /* MEDIA QUERY */
