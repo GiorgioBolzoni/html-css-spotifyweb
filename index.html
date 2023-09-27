@@ -282,9 +282,9 @@
             </section>
         </main>
         <div id="playbar" class="d-flex container sp-between text-white debug align-it-center">
-            <div class="playbar-sx debug d-flex sp-between">
+            <div class="playbar-sx debug d-flex">
                 <div class="debug d-flex">
-                    <div class="soundwave-container">
+                    <div class="soundwave-container display-none">
                         <div class="bar"></div>
                         <div class="bar"></div>
                         <div class="bar"></div>
@@ -298,36 +298,36 @@
                         <div class="card-subtitle text-grey">Brano Nome</div>
                     </div>
                 </div>
-                <div class="debug d-flex square-playbar align-it-center sp-between">
-                    <i class="fa-regular fa-heart px-5px "></i>
+                <div class="debug d-flex square-playbar align-it-center sp-between margin-left wrap-768">
+                    <i class="fa-regular fa-heart"></i>
                     <i class="fa-regular fa-folder"></i>
                 </div>
             </div>
             <div class="playbar-center debug d-flex column align-it-center">
                 <div class="debug width-40 d-flex f-center playbar-center-top">
                     <div class="debug icon-playbar-center-box d d-flex f-center align-it-center">
-                        <a href="#">
+                        <a href="#" class="hover-green">
                             <i class="fa-solid fa-shuffle"></i>
                         </a>
                     </div>
                     <div class="debug icon-playbar-center-box d-flex f-center align-it-center">
-                        <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+                        <a href="#" class="hover-green"><i class="fa-solid fa-backward-step"></i></a>
                     </div>
                     <div class="debug icon-playbar-center-box d-flex f-center align-it-center" id="play-icon">
-                        <a href="#"><i class="fa-regular fa-circle-play"></i></a>
+                        <a href="#" class="hover-green" id="play-icon-i"><i class="fa-regular fa-circle-play"></i></a>
                     </div>
                     <div class="debug icon-playbar-center-box d-flex f-center align-it-center">
-                        <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+                        <a href="#" class="hover-green"><i class="fa-solid fa-forward-step"></i></a>
                     </div>
                     <div class="debug icon-playbar-center-box d-flex f-center align-it-center">
-                        <a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+                        <a href="#" class="hover-green"><i class="fa-solid fa-arrow-rotate-right"></i></a>
                     </div>
                 </div>
                 <div class="debug width-100 d-flex f-center playbar-center-bottom align-it-center">
                     <div class="debug time">
                         <strong>0:25</strong>
                     </div>
-                    <div class="debug">
+                    <div class="debug width-60">
                         <input type="range" name="music-time" id="music-time">
                     </div>
                     <div class="debug time">
@@ -347,8 +347,8 @@
                         <a href="#"><i class="fa-solid fa-volume-high"></i></a>
                     </div>
                 </div>
-                <div class="debug width-100 d-flex f-end">
-                    <div class="debug">
+                <div class="debug width-100 d-flex f-end input-dx-box">
+                    <div class="debug width-100">
                         <input type="range" name="volume" id="volume">
                     </div>
                 </div>

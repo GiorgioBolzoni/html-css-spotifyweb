@@ -59,9 +59,9 @@ img{
     align-items: center;
 }
 /* UTILITY */
-/* .debug{
+.debug{
     border: 1px solid red;
-} */
+}
 
 /* TEXT */
 .text-center{
@@ -234,6 +234,9 @@ main{
 .width-100{
     width: 100%;
 }
+.width-60{
+    width: 60%;
+}
 .width-40{
     width: 40%;
 }
@@ -275,12 +278,15 @@ main{
     left: 0;
 }
 .playbar-sx{
-    width: 20%;
+    /* width: 20%; */
     height: 50px;
 }
 .square-playbar{
     width: 50px;
     height: 50px;
+}
+.margin-left{
+    margin-left: 3%;
 }
 .playbar-center{
     width: 60%;
@@ -300,9 +306,9 @@ main{
 #play-icon{
     font-size: 2em;
 }
-.playbar-dx{
+/* .playbar-dx{
     width: 20%;
-}
+} */
 .icon-playbar-dx-box{
     width: 50%;
     font-size: 1.2em
@@ -338,7 +344,7 @@ main{
 input[type="range"] {
   -webkit-appearance: none;
   margin-right: 15px;
-  width: 500px;
+  width: 100%;
   height: 7px;
   background: var(--color-dark-color);
   border-radius: 5px;
@@ -357,7 +363,7 @@ a{
 }
 #volume{
     -webkit-appearance: none;
-    width: 150px;
+    width: 100%;
     height: 7px;
     background: var(--color-dark-color);
     border-radius: 5px;
@@ -365,8 +371,32 @@ a{
     background-size: 70% 100%;
     background-repeat: no-repeat;
   }
+
+ /* HOVER */
+ .hover-green:hover i{
+    color: var(--color-highlight);
+    font-size: large;
+ }
+ #play-icon:hover i{
+    color: var(--color-highlight);
+    font-size: larger;
+ }
+.fa-heart:hover{
+    color: red;
+    font-weight: 600;
+    cursor: pointer;
+}
+.fa-folder:hover{
+    color: rgb(171, 171, 98);
+    font-weight: 600;
+    cursor: pointer;
+}
+
 /* MEDIA QUERY */
 
+.icon-playbar-dx-box{
+    transition: all 1s;
+}
 @media screen and (max-width: 1200px){
     .wrap{
         flex-wrap: wrap;
@@ -383,12 +413,32 @@ a{
         /* min-width: 100px; */
         /* padding: 0 20px 10px 0; */
     }
+    .icon-playbar-dx-box > div{
+        padding: 0 2px 0 2px;
+    }
 }
 @media screen and (max-width: 768px){
     .card{
         width: calc(100% / 2);
         /* min-width: 100px; */
         /* padding: 0 20px 10px 0; */
+    }
+    .wrap-768{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .playbar-center{
+        width: 50%;
+    }
+    .playbar-center-top{
+        width: 70%;
+    }
+    .icon-playbar-dx-box{
+        width: 40%;
+    }
+    .icon-playbar-dx-box > div{
+        padding: 0 1px 0 1px;
     }
 }
 @media screen and (max-width: 576px) {
@@ -431,150 +481,116 @@ a{
         width: 25px;
         height: 25px;
     }
+    .playbar-center-top{
+        width: 90%;
+        min-width: 120px;
+    }
+    #playbar{
+        padding: 0 2px 0 2px;
+    }
+    .playbar-left{
+        width: 15%;
+    }
+    .playbar-dx{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .icon-playbar-dx-box {
+        width: 60%;
+        padding-bottom: 3px;
+    }
+}
+
+  
+@keyframes equalizer {
+    0% {
+        height: 60%;
+    }
+    4% {
+        height: 50%;
+    }
+    8% {
+        height: 40%;
+    }
+    12% {
+        height: 30%;
+    }
+    16% {
+        height: 20%;
+    }
+    20% {
+        height: 30%;
+    }
+    24% {
+        height: 40%;
+    }
+    28% {
+        height: 10%;
+    }
+    32% {
+        height: 40%;
+    }
+    36% {
+        height: 60%;
+    }
+    40% {
+        height: 20%;
+    }
+    44% {
+        height: 40%;
+    }
+    48% {
+        height: 70%;
+    }
+    52% {
+        height: 30%;
+    }
+    56% {
+        height: 10%;
+    }
+    60% {
+        height: 30%;
+    }
+    64% {
+        height: 50%;
+    }
+    68% {
+        height: 60%;
+    }
+    72% {
+        height: 70%;
+    }
+    76% {
+        height: 80%;
+    }
+    80% {
+        height: 70%;
+    }
+    84% {
+        height: 60%;
+    }
+    88% {
+        height: 50%;
+    }
+    92% {
+        height: 60%;
+    }
+    96% {
+        height: 70%;
+    }
+    100% {
+        height: 80%;
+    }
+}
+  
+
+@keyframes heart-burst {
+    0% {
+        background-position: left
+    }
+    100% {
+        background-position: right
+    }
 }
 
 
-/* TEST */
-
-  
-  
-  @keyframes equalizer {
-    0% {
-      height: 60%;
-    }
-    4% {
-      height: 50%;
-    }
-    8% {
-      height: 40%;
-    }
-    12% {
-      height: 30%;
-    }
-    16% {
-      height: 20%;
-    }
-    20% {
-      height: 30%;
-    }
-    24% {
-      height: 40%;
-    }
-    28% {
-      height: 10%;
-    }
-    32% {
-      height: 40%;
-    }
-    36% {
-      height: 60%;
-    }
-    40% {
-      height: 20%;
-    }
-    44% {
-      height: 40%;
-    }
-    48% {
-      height: 70%;
-    }
-    52% {
-      height: 30%;
-    }
-    56% {
-      height: 10%;
-    }
-    60% {
-      height: 30%;
-    }
-    64% {
-      height: 50%;
-    }
-    68% {
-      height: 60%;
-    }
-    72% {
-      height: 70%;
-    }
-    76% {
-      height: 80%;
-    }
-    80% {
-      height: 70%;
-    }
-    84% {
-      height: 60%;
-    }
-    88% {
-      height: 50%;
-    }
-    92% {
-      height: 60%;
-    }
-    96% {
-      height: 70%;
-    }
-    100% {
-      height: 80%;
-    }
-  }
-  
-  .song {
-    display: flex;
-    align-items: center;
-    width: 300px;
-  }
-  .albumart {
-    background-image: url('https://i.scdn.co/image/ab67616d0000b2738181d8122c4f608df8ef5a4f');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 60px;
-    width: 60px;
-    margin-right: 15px;
-    border-radius: 4px;
-  }
-  .title { 
-    color: #1dd05d;
-    font-size: 1.3rem;
-    padding: 0; margin: 2px 0 6px;
-  }
-  .artist {
-    font-size: 1rem;
-    padding: 0; margin: 2px 0;
-    color: #baaebc;
-  }
-  .artist:hover {
-    border-bottom: 1px solid;
-    margin-top: -0.5px;
-    cursor: pointer;
-  }
-  .animate {
-    animation: heart-burst .8s steps(28) forwards;
-  }
-  
-  @keyframes heart-burst {
-    0% {
-      background-position: left
-    }
-    100% {
-      background-position: right
-    }
-  }
-  .like-container {
-    height: 65px;
-    width: 65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .like {
-    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/66955/web_heart_animation.png');
-    background-repeat: no-repeat;
-    background-size: 2900%;
-    background-position: left;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    cursor: pointer;
-  }
