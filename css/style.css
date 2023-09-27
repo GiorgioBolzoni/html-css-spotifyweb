@@ -31,6 +31,9 @@ img{
 .f-end{
     justify-content: end;
 }
+.align-start{
+    align-content: start;
+}
 .align-center{
     align-content: center;
 }
@@ -56,9 +59,9 @@ img{
     align-items: center;
 }
 /* UTILITY */
-/* .debug{
+.debug{
     border: 1px solid red;
-} */
+}
 
 /* TEXT */
 .text-center{
@@ -144,6 +147,9 @@ main{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.px-5px{
+    padding-left: 5px;
+}
 /* CALL TO ACTION */
 .btn{
     margin-right: 30px;
@@ -225,6 +231,9 @@ main{
 .width-100{
     width: 100%;
 }
+.width-50{
+    width: 50%;
+}
 .download{
     width: 20px;
 }
@@ -261,6 +270,35 @@ main{
     z-index: 1000;
     bottom: 0;
     left: 0;
+}
+.playbar-sx{
+    width: 250px;
+    height: 50px;
+}
+.square-playbar{
+    width: 50px;
+    height: 50px;
+}
+.playbar-center{
+    width: 60%;
+    height: 70px;
+    padding-bottom: 5px;
+}
+.playbar-center-top{
+    height: 50%;
+}
+.playbar-center-bottom{
+    height: 50%;
+}
+.icon-playbar-center-box{
+    width: calc(100% / 5);
+    font-size: 1.2em
+}
+#play-icon{
+    font-size: 2em;
+}
+.playbar-dx{
+    width: 15%;
 }
 
 /* MEDIA QUERY */
