@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="wrapper debug">
-        <div id="call-to-action" class=" d-flex align-center f-end text-white">
+        <div id="call-to-action" class=" d-flex f-end text-white">
             <a href="#">
                 <div class="btn">EFFETTUA L'UPGRADE</div>
             </a>
@@ -17,8 +17,8 @@
 
         <main class="d-flex text-white">
             <!-- sidebar -->
-            <nav id="side-bar" class="d-flex">
-                <div class="container debug">
+            <nav id="side-bar" class="d-flex column">
+                <div class="container debug side-bar-top">
                     <h1 class="debug">
                         <a href="#"><img src="img/logo.svg" alt="" class="display-none"></a>
                         <a href="#"><img src="img/logo-small.svg" alt="" id="logo-small" class="display-block"></a>
@@ -30,7 +30,7 @@
                                     <div class="icon debug">
                                         <img src="img/home.svg" alt="">
                                     </div>
-                                    <div class="side-text debug d-flex align-center display-none">
+                                    <div class="side-text debug d-flex align-it-center display-none">
                                         Home
                                     </div>
                                 </a>
@@ -40,7 +40,7 @@
                                     <div class="icon debug">
                                         <img src="img/search.svg" alt="">
                                     </div>
-                                    <div class="side-text debug d-flex align-center display-none">
+                                    <div class="side-text debug d-flex align-it-center display-none">
                                         Cerca
                                     </div>
                                 </a>
@@ -50,7 +50,7 @@
                                     <div class="icon debug">
                                         <img src="img/libreria.svg" alt="">
                                     </div>
-                                    <div class="side-text debug d-flex align-center display-none">
+                                    <div class="side-text debug d-flex align-it-center display-none">
                                         La tua libreria
                                     </div>
                                 </a>
@@ -61,9 +61,9 @@
                     <div class="short-list debug text-grey display-none">
                         <ul class="debug d-flex column f-start debug">
                             <li class="d-flex debug align-center">
-                                <a href="#" class="text-grey d-flex">
+                                <a href="#" class="text-grey d-flex d-flex align-center align-it-center">
                                     <div class="icon debug">
-                                        <div class="square d-flex debug f-center align-center">
+                                        <div class="square d-flex debug f-center align-center align-it-center">
                                             <i class="fa-solid fa-plus text-dark"></i>
                                         </div>
                                     </div>
@@ -124,24 +124,24 @@
                         </ul>
                     </div>
                 </div>
-                <div class="container width-100 debug d-flex align-end">
+                <div class="container side-bar-bottom width-100 debug d-flex column align-it-end">
                     <div class="debug align-end download-section d-flex width-100">
                         <a href="#">
                             <div class="text-grey debug d-flex">
                                 <div class="download debug">
                                     <img src="img/download.svg" alt="">
                                 </div>
-                                <div class="download-text debug display-none">Installa app</div>
+                                <div class="download-text d-flex  align-it-center debug display-none">Installa app</div>
                             </div>
                         </a>
                     </div>
-                    <div class="debug align-end profile-section d-flex width-100">
+                    <div class="debug profile-section d-flex width-100">
                         <a href="#">
                             <div class="text-grey debug d-flex">
                                 <div class="profile debug">
                                     <img src="img/profile.svg" alt="">
                                 </div>
-                                <div class="profile-text debug text-white display-none">John Doe</div>
+                                <div class="profile-text debug text-white d-flex  align-it-center display-none">John Doe</div>
                             </div>
                         </a>
                     </div>
@@ -151,7 +151,7 @@
 
             <section id="main-content">
                 <nav class="text-grey d-flex f-center debug" id="section-music">
-                    <ul class="d-flex ">
+                    <ul class="d-flex wrap f-center">
                         <li><a href="#">IN EVIDENZA</a></li>
                         <li><a href="#">PODCAST</a></li>
                         <li><a href="#">CLASSIFICHE</a></li>
@@ -163,15 +163,19 @@
                 <section id="recently" class="debug">
                     <h2 class="debug">Recently played</h2>
                     <div class="album debug">
-                        <div class="cover debug d-flex">
+                        <div class="cover wrap debug d-flex">
                             <div class="card debug">
                                 <a href=""><div class="card-img debug pd-y">
                                     <img src="img/metal_lifting.jpg" alt="metal">
+                                    <div class="overlay d-flex align-it-center f-center">
+                                        <i class="fa-regular fa-circle-play font-play"></i>
+                                    </div>
                                 </div>
                                 <div class="card-text debug pd-y text-center">
                                     <h4>Heavy Metal</h4>
                                 </div>
-                                <div class="card-subtitle debug text-center text-grey">Subtitle</div></a>
+                                <div class="card-subtitle debug text-center text-grey">Subtitle</div>
+                            </a>
                             </div>
                             <div class="card debug">
                                 <a href="">
