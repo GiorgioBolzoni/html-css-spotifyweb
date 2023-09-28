@@ -129,7 +129,7 @@ h4{
 main{
     width: 100%;
     height: calc(100% - 90px);
-    background-color: orange;
+    background-color: var(--color-dark-color);
 }
 #side-bar{
     width: 250px;
@@ -155,6 +155,12 @@ main{
     top: 0;
     right: 0;
     z-index: 500;
+}
+audio{
+    opacity: 0;
+    position: absolute;
+    left: 48.5vw;
+    bottom: 34%;
 }
 /* PADDING / MARGIN */
 .pd-y{
@@ -567,7 +573,18 @@ li > a:hover{
     }
 }
 
-  
+@media screen and (max-width: 400px) {
+    .playbar-dx{
+        display:none;
+    }
+    .playbar-center{
+        width: 80%;
+        min-width: 200px;
+    }
+    .playbar-sx{
+        width: 20%;
+    }
+}
 @keyframes equalizer {
     0% {
         height: 60%;
@@ -649,14 +666,5 @@ li > a:hover{
     }
 }
   
-
-@keyframes heart-burst {
-    0% {
-        background-position: left
-    }
-    100% {
-        background-position: right
-    }
 }
-
 
