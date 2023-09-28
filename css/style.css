@@ -21,6 +21,19 @@ img{
     width: 100%;
     display: block;
 }
+#main-content::-webkit-scrollbar {
+    width: 1em;
+}
+   
+#main-content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px rgba(173, 255, 47, 0.3);
+}
+   
+#main-content::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #ADFF2F -5.43%, rgba(0, 0, 0, 0.82) 39.4%, rgba(28, 67, 19, 0.82) 49.46%, rgba(131, 193, 36, 0.956366) 50%, rgba(0, 0, 0, 0.82) 61.96%, rgba(182, 255, 70, 0.82) 103.9%);
+    outline: 1px solid rgba(40, 40, 40, 0.5);
+    border-radius: 5px;
+}
 /* FLEXBOX */
 .d-flex{
     display: flex;
@@ -141,6 +154,7 @@ main{
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 500;
 }
 /* PADDING / MARGIN */
 .pd-y{
@@ -161,11 +175,26 @@ main{
     border-radius: 50px;
     padding: 10px 20px 10px 20px;
     color: var(--color-white);
+    transition: all 0.5s;
 }
 /* SECTION MUSIC */
 #section-music{
     flex-direction: row;
     font-size: 0.8em;
+}
+.underscore-green{
+    background-color: var(--color-highlight);
+    width: 50%;
+    height: 2px;
+    margin-top: 2px;
+}
+.underscore-green-vert{
+    background-color: var(--color-highlight);
+    width: 3px;
+    height: 35px;
+    margin-right: 2px;
+    position: absolute;
+    left: 0;
 }
 /* MAIN */
 .card{
@@ -203,6 +232,8 @@ main{
 .font-play{
     font-size: 3em;
 }
+
+
 /* SIDEBAR */
 
 #logo-small{
@@ -400,7 +431,16 @@ li > a:hover{
     background-color: var(--color-dark-color);
     font-size: 0.8em;
 }
-
+#volume:hover{
+    cursor: grab;
+}
+.overlay>.fa-circle-play{
+    transition: all 0.2s;
+}
+.overlay>.fa-circle-play:hover{
+    font-size: 6em;
+    transform: rotate(360deg);
+}
 /* MEDIA QUERY */
 
 .icon-playbar-dx-box{
@@ -423,7 +463,7 @@ li > a:hover{
         /* padding: 0 20px 10px 0; */
     }
     .icon-playbar-dx-box > div{
-        padding: 0 2px 0 2px;
+        padding: 0 5px 0 2px;
     }
 }
 @media screen and (max-width: 768px){
@@ -449,6 +489,15 @@ li > a:hover{
     .icon-playbar-dx-box > div{
         padding: 0 1px 0 1px;
     }
+    
+    .playbar-dx{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .icon-playbar-dx-box {
+        width: 60%;
+        padding-bottom: 3px;
+    }
 }
 @media screen and (max-width: 576px) {
     .display-none{
@@ -464,6 +513,7 @@ li > a:hover{
     }
     #side-bar{
         width: 50px;
+        overflow: hidden;
     }
     .container{
         padding-left: 15%;
@@ -494,19 +544,26 @@ li > a:hover{
         width: 90%;
         min-width: 120px;
     }
+    .playbar-center-bottom{
+        width: 100%;
+        min-width: 150px;
+    }
     #playbar{
-        padding: 0 2px 0 2px;
+        padding: 0 10px 0 10px;
     }
     .playbar-left{
         width: 15%;
     }
-    .playbar-dx{
-        flex-wrap: wrap;
-        justify-content: center;
+    #playbar-dx{
+        width: 15%;
     }
-    .icon-playbar-dx-box {
-        width: 60%;
-        padding-bottom: 3px;
+    .input-dx-box > div{
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    #volume{
+        max-width: 100px;
     }
 }
 
