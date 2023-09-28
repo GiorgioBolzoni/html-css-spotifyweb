@@ -665,6 +665,26 @@ li > a:hover{
         height: 80%;
     }
 }
-  
-}
 
+/* 2nd PAGE */
+
+.card-2-pg{
+    width: 50%;
+    /* min-width: 100px; */
+    padding: 0 20px 10px 0;
+}
+.card-2-pg>div{
+    width: 80%;
+}
+.pg2-h3{
+    font-size: xx-large;
+    padding-bottom: 20px;
+    
+}
+.text-cover{
+    width: 50%;
+}
+.width-20{
+    width: 20%;
+    line-height: 25px;
+}
