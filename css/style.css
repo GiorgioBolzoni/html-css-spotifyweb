@@ -156,12 +156,12 @@ main{
     right: 0;
     z-index: 500;
 }
-audio{
+/* audio{
     opacity: 0;
     position: absolute;
     left: 48.5vw;
     bottom: 34%;
-}
+} */
 /* PADDING / MARGIN */
 .pd-y{
     padding-top: 5px;
@@ -679,7 +679,13 @@ li > a:hover{
 .pg2-h3{
     font-size: xx-large;
     padding-bottom: 20px;
-    
+    width: 100%;
+    text-align: center;
+}
+.border-text-2pg{
+    background-color: rgba(0, 0, 0, 30%);
+    box-shadow: inset 1px 1px 20px black;
+    margin: 1px 2px 5px 0;
 }
 .text-cover{
     width: 50%;
